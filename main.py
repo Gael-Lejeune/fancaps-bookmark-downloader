@@ -40,7 +40,7 @@ def main():
     size_of_output_folder = size_of_output_folder / 1000000
     print("Number of pictures downloaded : {}".format(number_of_pictures_downloaded))
     print("Number of pictures in the folder : {}".format(number_of_pictures_in_folder))
-    print("Size of the output folder : {} MB".format(size_of_output_folder))
+    print("Size of the output folder : {} MB".format(round(size_of_output_folder, 3)))
 
 
 if __name__ == "__main__":
