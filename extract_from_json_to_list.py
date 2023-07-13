@@ -55,6 +55,9 @@ def main():
         m = re.search(r"imageid=(\d+)", link)
         if m:
             ids.append(m.group(1))
+        n = re.search(r"php\?\/(\d+)", link)
+        if n:
+            ids.append(n.group(1))
 
     # Write the ids to the output file
     with open(output_file, "w") as f:
